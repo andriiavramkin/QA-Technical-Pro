@@ -1,9 +1,8 @@
-//v1
 function pow (x, y) {
-    console.log(x ** y)
+    let _result = 1
+    for (let i = 1; i <= y; i++) {
+        _result *= x
+    }
+    console.log(_result)
 }
-pow(2,4)
-
-//v2
-const pow2 = (x, y) => x ** y
-console.log(pow2(3,3))
+pow(5,3)
